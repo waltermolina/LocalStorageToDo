@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lista de Tareas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Normalizador de CSS (para estandarizar entre navegadores -->
+    <link href="libs/normalize/normalize.min.css" rel="stylesheet">
+    <!-- Material Design Icons (para poner algunos iconos lindos) -->
+    <link href="fonts/material-design/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Estilos de la App -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header><i class="float-left mdi mdi-playlist-check"></i><span class="float-left">Lista de Tareas de Walter</span></header>
+    <section id="newTask">
+        <input type='text' id='taskDescInput' placeholder='Qué deseas recordar, Walter?'>
+        <button id="addTaskBtn" class="btn no-margin float-right"><i class="mdi mdi-check"></i></button>
+    </section>
+
+    <section id="theList">
+        <ul class="list-unstyled"></ul>
+        <div id="emptyList">
+            <i class="mdi mdi-nature-people"></i>
+            <h1>No tienes tareas pendientes!</h1>
+        </div>
+    </section>
+
+    <script src="libs/jquery/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
